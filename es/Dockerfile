@@ -6,5 +6,5 @@ MAINTAINER Marcelo Ochoa  "marcelo.ochoa@gmail.com"
 COPY config/elasticsearch.yml /usr/share/elasticsearch/config
 
 EXPOSE 9200 9300
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["/bootstrap.sh"]
 CMD ["elasticsearch"]

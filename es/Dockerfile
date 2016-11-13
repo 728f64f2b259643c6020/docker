@@ -6,5 +6,5 @@ MAINTAINER Elasticsearch Cluster "FTEL"
 COPY config/elasticsearch.yml /usr/share/elasticsearch/config
 
 EXPOSE 9200 9300
-ENTRYPOINT ["/bootstrap.sh"]
+ENTRYPOINT ["bootstrap.sh"]
 CMD ["elasticsearch"]
